@@ -1,0 +1,21 @@
+==================================================
+TEMT6000 lib
+==================================================
+= Copyright (c) Davide Gironi, 2012              =
+= http://davidegironi.blogspot.it/               =
+==================================================
+
+
+TEMT6000 is a silicon NPN epitaxial planar phototransistor in a miniature
+transparent mold for surface mounting onto a printed circuit board.
+The device is sensitive to the visible spectrum.
+This library implements a way to read sensor data and transform to lux.
+
+Devel Notes
+-----------
+This library was developed on Eclipse, built with avr-gcc on Atmega8 @ 1MHz.
+
+
+License
+-------
+Please refer to LICENSE file for licensing information.
