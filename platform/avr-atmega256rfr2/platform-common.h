@@ -54,6 +54,15 @@
 #define MAX_INT16U_VALUE 0xFFFF
 #define MAX_INT32U_VALUE 0xFFFFFFFF
 
+//======================User Button Assignment======================
+
+#define  USER_SW_DIR   DDRB
+#define  USER_SW_PORT  PORTB
+#define  USER_SW_PIN   PB4
+
+
+
+
 // ========= PORT B Assignement and Description =====================
 
 #ifdef EXT_3
