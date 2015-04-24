@@ -53,7 +53,7 @@ void congigure_button_pin(void)
 USER_SW_DIR & = ~(1<<PB4);  // Set the Pin as Input  
 USER_SW_PORT |= (1<<PB4);  // When Pin is set as Input and PORT Pin is Pulled high by Writing it do not actually drive the Pin High , it 
                            // only enbles the Pull up resistro
-DDRE |= (1<<PE4);
+DDRE |= (1<<PB4);
 cli(); // Disable Interupt before making changes to Interrupt setup  registers
 PCMSK0 |= (1<<PCINT4);  //Enable Enterrupt for any change in PB4  Pin State 
 PCICR |=  (1<PCIE0);
@@ -66,8 +66,7 @@ sie();
 ISR (PCINT0_vect) 
 {
 
-
-PORTE ^ = (1<<PE4);
+PORTB ^ = (1<<PB4);
 }
 
 
