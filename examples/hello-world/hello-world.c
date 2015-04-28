@@ -91,17 +91,16 @@ PROCESS_THREAD(blink_process, ev, data)
   static struct etimer et_blink;
   etimer_set(&et_blink, CLOCK_SECOND);
   PROCESS_BEGIN();
-  char lux_value[6];
-  char lux_value2[6];
-  char raw_value[6];
-  char raw_value2[6];
-  char temperature_val[6];
-
-  uint16_t  adc_data=0;
-  uint16_t  adc_data2=0;
-  float adc_lux=0;
-  float adc_lux2=0;
-  float measured_temp=0;
+static char lux_value[6];
+static char lux_value2[6];
+static char raw_value[6];
+static char raw_value2[6];
+static  char temperature_val[6];
+static  uint16_t  adc_data=0;
+static  uint16_t  adc_data2=0;
+static  float adc_lux=0;
+static  float adc_lux2=0;
+static  float measured_temp=0;
 //  static int blinks = 0;
 
   ssd1306_clear(); 
