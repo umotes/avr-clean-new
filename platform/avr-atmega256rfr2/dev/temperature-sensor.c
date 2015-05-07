@@ -124,7 +124,7 @@ SENSORS_SENSOR(temperature_sensor, TEMPERATURE_SENSOR,
 /*---------------------------------------------------------------------------*/
 //   Read Sensor Temperature 
 /*---------------------------------------------------------------------------*/ 
-int8_t ReadTempVal()
+int16_t ReadTempVal(void)
 {
   //  uint8_t adressRead = b10010011;
   uint8_t slaveAddr = 0b1001011; //   0b10010001; 
@@ -161,8 +161,39 @@ int8_t ReadTempVal()
   TWIStop();
 
   // 128 - (2^11-t>>4)*0.0625
-  return (int)(128 - (2048-(tempData>>4))*0.0625);
+//  return (int)(128 - (2048-(tempData>>4))*0.0625);
+    return tempData;
 }
+
+float ReadTemperature(void)
+{
+int16_t rawadc_val=0;
+int16_t sign=1;
+int16_t abstemp, temp_fraction,temp_integer; 
+
+rawadc_val=Readtempval();
+
+if(rawadc_val&0x8000)
+ {
+ abstemp=(rawadc_val^0xFFFF)+1;
+ sign= -1;
+}
+else 
+{
+abstemp=rawadc_val;
+}
+
+temp_integer=(abstemp>>8)*sign;
+
+temp_fraction=((abstemp>>4)%16)*625;
+
+//return  value  Pending -- need to check 
+
+}
+
+
+
+
 
 /*---------------------------------------------------------------------------*/
 //   Configure Temperature Low Limit Register

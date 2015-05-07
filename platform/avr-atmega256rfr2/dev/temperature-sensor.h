@@ -42,7 +42,7 @@
 
 #include "lib/sensors.h"
 
-int8_t ReadTempVal();
+int16_t ReadTempval(void);
 int8_t SetTempLowLimit( uint16_t value);
 int8_t SetTempHiLimit( uint16_t value);
 int8_t ResetTempSenPtr(uint8_t slaveAddr);

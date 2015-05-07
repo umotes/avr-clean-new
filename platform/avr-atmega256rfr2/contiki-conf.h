@@ -188,8 +188,8 @@ typedef unsigned short uip_stats_t;
 
 #if 1 /* No radio cycling */
 #define NETSTACK_CONF_MAC         nullmac_driver
-//#define NETSTACK_CONF_RDC         sicslowmac_driver
-#define NETSTACK_CONF_RDC        nullrdc_driver
+//#define NETSTACK_CONF_RDC       sicslowmac_driver
+#define NETSTACK_CONF_RDC         nullrdc_driver
 #define NETSTACK_CONF_FRAMER      framer_802154
 #define NETSTACK_CONF_RADIO       rf230_driver
 #define CHANNEL_802_15_4          26
@@ -225,7 +225,7 @@ typedef unsigned short uip_stats_t;
 /* 25 bytes per UDP connection */
 #define UIP_CONF_UDP_CONNS       10
 /* See uip-ds6.h */
-#define NBR_TABLE_CONF_MAX_NEIGHBORS      20
+#define NBR_TABLE_CONF_MAX_NEIGHBORS      10
 #define UIP_CONF_DS6_DEFRT_NBU    2
 #define UIP_CONF_DS6_PREFIX_NBU   3
 #define UIP_CONF_MAX_ROUTES    20

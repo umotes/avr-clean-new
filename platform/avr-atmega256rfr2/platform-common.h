@@ -59,7 +59,7 @@
 
 //=================SPI PORT Configuration for OLED Disply===========
 
-#ifdef EXT_1
+#if defined (EXT_1)
 #define SSD_MOSI_PORT		  PORTB
 #define SSD_MOSI_DIR		  DDRB
 #define SSD_MOSI_PIN		  PORTB2
@@ -80,7 +80,7 @@
 #define SSD_DC_DIR                DDRE
 #define SSD_DC_PIN                PORTE2
 
-#elif EXT_3
+#elif defined (EXT_3)
 
 #define SSD_MOSI_PORT             PORTB
 #define SSD_MOSI_DIR              DDRB
@@ -101,6 +101,11 @@
 #define SSD_CS_PORT               PORTG
 #define SSD_CS_DIR                DDRG
 #define SSD_CS_PIN                PORTG2
+
+#else 
+ #error "Display Extension Port EXT_1/EXT_3  not defined, check Platform.h"
+
+
 #endif
 
 
