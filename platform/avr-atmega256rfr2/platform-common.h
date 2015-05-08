@@ -50,16 +50,13 @@
 #define READBITS(reg, bits)   (reg & (bits))
 
 #define EXT_3
+#define MAX_INT8U_VALUE 0xFF
+#define MAX_INT16U_VALUE 0xFFFF
+#define MAX_INT32U_VALUE 0xFFFFFFFF
 
-//======================User Button Assignment======================
+// ========= PORT B Assignement and Description =====================
 
-#define  BUTTOM_SW_PORT  PORTB
-#define  BUTTON_SW_PIN   PB4
-#define  BUTTON_SW_DIR   DDRB
-
-//=================SPI PORT Configuration for OLED Disply===========
-
-#if defined (EXT_1)
+#ifdef EXT_3
 #define SSD_MOSI_PORT		  PORTB
 #define SSD_MOSI_DIR		  DDRB
 #define SSD_MOSI_PIN		  PORTB2
@@ -67,61 +64,74 @@
 #define SSD_CLK_PORT		  PORTB
 #define SSD_CLK_DIR 		  DDRB
 #define SSD_CLK_PIN 		  PORTB1
+#endif
 
-#define SSD_CS_PORT               PORTG
-#define SSD_CS_DIR                DDRG
-#define SSD_CS_PIN                PORTG0
 
-#define SSD_RES_PORT              PORTD
-#define SSD_RES_DIR               DDRD
-#define SSD_RES_PIN               PORTD5
-
-#define SSD_DC_PORT               PORTE
-#define SSD_DC_DIR                DDRE
-#define SSD_DC_PIN                PORTE2
-
-#elif defined (EXT_3)
-
+#ifdef EXT_3
 #define SSD_MOSI_PORT             PORTB
 #define SSD_MOSI_DIR              DDRB
 #define SSD_MOSI_PIN              PORTB2
 
+
 #define SSD_CLK_PORT              PORTB
 #define SSD_CLK_DIR               DDRB
 #define SSD_CLK_PIN               PORTB1
-
-#define SSD_RES_PORT              PORTD
-#define SSD_RES_DIR               DDRD
-#define SSD_RES_PIN               PORTD7
-
-#define SSD_DC_PORT               PORTB
-#define SSD_DC_DIR                DDRB
-#define SSD_DC_PIN                PORTB7
-
-#define SSD_CS_PORT               PORTG
-#define SSD_CS_DIR                DDRG
-#define SSD_CS_PIN                PORTG2
-
-#else 
- #error "Display Extension Port EXT_1/EXT_3  not defined, check Platform.h"
-
-
 #endif
 
 
-//========= RESOURCES AVAILABLE ON SENSOR BOARD================//
+
+// ========= PORT C Assignement and Description =====================
+// None So Far 
+
+
+// ========= PORT D Assignement and Description =====================
+#ifdef EXT_1
+#define SSD_RES_PORT		  PORTD
+#define SSD_RES_DIR 		  DDRD
+#define SSD_RES_PIN 		  PORTD5
+#endif
+
+#ifdef EXT_3
+#define SSD_RES_PORT              PORTD
+#define SSD_RES_DIR               DDRD
+#define SSD_RES_PIN               PORTD7
+#endif
 
 
 
-#define PLATFORM_HAS_BATTERY                    1
-#define PLATFORM_HAS_BUTTON                     1
-#define PLATFORM_HAS_LEDS                       1
-#define PLATFORM_HAS_TEMP_SENSOR_1              1
-#define PLATFORM_HAS_TEMP_SENSOR_2              1
-#define PLATFORM_HAS_LIGHT_SENSOR               1
-#define PLATFORM_HAS_RADIO                      1
+
+// ========= PORT E Assignement and Description =====================
+#ifdef EXT_1
+#define SSD_DC_PORT 		  PORTE
+#define SSD_DC_DIR		  DDRE
+#define SSD_DC_PIN		  PORTE2
+#endif
+
+#ifdef EXT_3
+#define SSD_DC_PORT               PORTB
+#define SSD_DC_DIR                DDRB
+#define SSD_DC_PIN                PORTB7
+#endif
 
 
+
+
+// ========= PORT F Assignement and Description =====================
+//None so Far 
+
+
+// ========= PORT G Assignement and Description =====================
+#ifdef EXT_1
+#define SSD_CS_PORT 		  PORTG
+#define SSD_CS_DIR		  DDRG
+#define SSD_CS_PIN		  PORTG0
+#endif
+
+#ifdef EXT_3
+#define SSD_CS_PORT               PORTG
+#define SSD_CS_DIR                DDRG
+#define SSD_CS_PIN                PORTG2
+#endif
 
 /** @} */
 #endif

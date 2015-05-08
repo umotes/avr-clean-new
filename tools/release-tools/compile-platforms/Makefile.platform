@@ -5,7 +5,7 @@ APPS=serial-shell webserver telnetd
 ifeq ($(TARGET), avr-raven)
   CONTIKI_WITH_IPV6 = 1
 else
-  CONTIKI_WITH_RIME = 1
+  CONTIKI_WITH_RIME = 0
 endif
 
 include $(CONTIKI)/Makefile.include

@@ -43,7 +43,7 @@
 #include "net/rpl/rpl.h"
 
 #include "net/netstack.h"
-#include "dev/button-sensor.h"
+//#include "dev/button-sensor.h"
 #include "dev/slip.h"
 
 #include <stdio.h>
@@ -348,7 +348,7 @@ PROCESS_THREAD(border_router_process, ev, data)
 
   PROCESS_PAUSE();
 
-  SENSORS_ACTIVATE(button_sensor);
+  //SENSORS_ACTIVATE(button_sensor);
 
   PRINTF("RPL-Border router started\n");
 #if 0

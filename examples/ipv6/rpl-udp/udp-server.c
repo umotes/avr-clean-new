@@ -34,7 +34,7 @@
 #include "net/rpl/rpl.h"
 
 #include "net/netstack.h"
-#include "dev/button-sensor.h"
+//#include "dev/button-sensor.h"
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -105,7 +105,7 @@ PROCESS_THREAD(udp_server_process, ev, data)
 
   PROCESS_PAUSE();
 
-  SENSORS_ACTIVATE(button_sensor);
+  //SENSORS_ACTIVATE(button_sensor);
 
   PRINTF("UDP server started\n");
 
@@ -166,10 +166,8 @@ PROCESS_THREAD(udp_server_process, ev, data)
     PROCESS_YIELD();
     if(ev == tcpip_event) {
       tcpip_handler();
-    } else if (ev == sensors_event && data == &button_sensor) {
-      PRINTF("Initiaing global repair\n");
-      rpl_repair_root(RPL_DEFAULT_INSTANCE);
     }
+    
   }
 
   PROCESS_END();

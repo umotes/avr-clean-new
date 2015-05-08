@@ -3,8 +3,8 @@ obj_avr-atmega256rfr2/roll-tm.o: \
  ../../../core/contiki-version.h \
  ../../../platform/avr-atmega256rfr2/contiki-conf.h \
  ../../../cpu/avr/dev/compiler.h \
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h \
- ../../../core/net/ipv6/multicast/uip-mcast6-engines.h \
+ ../../../platform/avr-atmega256rfr2/platform-common.h \
+ ../../../platform/avr-atmega256rfr2/project-conf.h \
  ../../../core/contiki-default-conf.h ../../../core/sys/process.h \
  ../../../core/sys/pt.h ../../../core/sys/lc.h \
  ../../../core/sys/lc-switch.h ../../../core/sys/cc.h \
@@ -59,6 +59,7 @@ obj_avr-atmega256rfr2/roll-tm.o: \
  ../../../core/net/rime/trickle.h ../../../core/net/netstack.h \
  ../../../core/net/ipv6/uip-icmp6.h \
  ../../../core/net/ipv6/multicast/uip-mcast6.h \
+ ../../../core/net/ipv6/multicast/uip-mcast6-engines.h \
  ../../../core/net/ipv6/multicast/uip-mcast6-route.h \
  ../../../core/net/ipv6/multicast/smrf.h \
  ../../../core/net/ipv6/multicast/roll-tm.h \
@@ -68,8 +69,8 @@ obj_avr-atmega256rfr2/roll-tm.o: \
  ../../../core/contiki-version.h :
  ../../../platform/avr-atmega256rfr2/contiki-conf.h :
  ../../../cpu/avr/dev/compiler.h :
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h :
- ../../../core/net/ipv6/multicast/uip-mcast6-engines.h :
+ ../../../platform/avr-atmega256rfr2/platform-common.h :
+ ../../../platform/avr-atmega256rfr2/project-conf.h :
  ../../../core/contiki-default-conf.h ../../../core/sys/process.h :
  ../../../core/sys/pt.h ../../../core/sys/lc.h :
  ../../../core/sys/lc-switch.h ../../../core/sys/cc.h :
@@ -124,6 +125,7 @@ obj_avr-atmega256rfr2/roll-tm.o: \
  ../../../core/net/rime/trickle.h ../../../core/net/netstack.h :
  ../../../core/net/ipv6/uip-icmp6.h :
  ../../../core/net/ipv6/multicast/uip-mcast6.h :
+ ../../../core/net/ipv6/multicast/uip-mcast6-engines.h :
  ../../../core/net/ipv6/multicast/uip-mcast6-route.h :
  ../../../core/net/ipv6/multicast/smrf.h :
  ../../../core/net/ipv6/multicast/roll-tm.h :
