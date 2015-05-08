@@ -4,7 +4,8 @@ obj_avr-atmega256rfr2/process.o: ../../../core/sys/process.c \
  ../../../core/sys/cc.h \
  ../../../platform/avr-atmega256rfr2/contiki-conf.h \
  ../../../cpu/avr/dev/compiler.h \
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h \
+ ../../../platform/avr-atmega256rfr2/platform-common.h \
+ ../../../platform/avr-atmega256rfr2/project-conf.h \
  ../../../core/sys/arg.h
 ../../../core/sys/process.c :
  ../../../core/sys/process.h ../../../core/sys/pt.h :
@@ -12,5 +13,6 @@ obj_avr-atmega256rfr2/process.o: ../../../core/sys/process.c \
  ../../../core/sys/cc.h :
  ../../../platform/avr-atmega256rfr2/contiki-conf.h :
  ../../../cpu/avr/dev/compiler.h :
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h :
+ ../../../platform/avr-atmega256rfr2/platform-common.h :
+ ../../../platform/avr-atmega256rfr2/project-conf.h :
  ../../../core/sys/arg.h :

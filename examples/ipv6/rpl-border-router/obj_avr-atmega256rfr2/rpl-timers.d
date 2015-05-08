@@ -1,7 +1,8 @@
 obj_avr-atmega256rfr2/rpl-timers.o: ../../../core/net/rpl/rpl-timers.c \
  ../../../platform/avr-atmega256rfr2/contiki-conf.h \
  ../../../cpu/avr/dev/compiler.h \
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h \
+ ../../../platform/avr-atmega256rfr2/platform-common.h \
+ ../../../platform/avr-atmega256rfr2/project-conf.h \
  ../../../core/net/rpl/rpl-private.h ../../../core/net/rpl/rpl.h \
  ../../../core/net/rpl/rpl-conf.h ../../../core/lib/list.h \
  ../../../core/net/ip/uip.h ../../../core/net/ip/uipopt.h \
@@ -35,7 +36,8 @@ obj_avr-atmega256rfr2/rpl-timers.o: ../../../core/net/rpl/rpl-timers.c \
 ../../../core/net/rpl/rpl-timers.c :
  ../../../platform/avr-atmega256rfr2/contiki-conf.h :
  ../../../cpu/avr/dev/compiler.h :
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h :
+ ../../../platform/avr-atmega256rfr2/platform-common.h :
+ ../../../platform/avr-atmega256rfr2/project-conf.h :
  ../../../core/net/rpl/rpl-private.h ../../../core/net/rpl/rpl.h :
  ../../../core/net/rpl/rpl-conf.h ../../../core/lib/list.h :
  ../../../core/net/ip/uip.h ../../../core/net/ip/uipopt.h :

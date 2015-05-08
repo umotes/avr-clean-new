@@ -2,7 +2,8 @@ obj_avr-atmega256rfr2/framer.o: ../../../core/net/mac/framer.c \
  ../../../core/net/mac/framer.h ../../../core/net/packetbuf.h \
  ../../../platform/avr-atmega256rfr2/contiki-conf.h \
  ../../../cpu/avr/dev/compiler.h \
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h \
+ ../../../platform/avr-atmega256rfr2/platform-common.h \
+ ../../../platform/avr-atmega256rfr2/project-conf.h \
  ../../../core/net/linkaddr.h ../../../core/net/llsec/llsec802154.h \
  ../../../core/net/mac/frame802154.h ../../../core/net/ip/uip.h \
  ../../../core/net/ip/uipopt.h ../../../core/net/ip/tcpip.h \
@@ -25,7 +26,8 @@ obj_avr-atmega256rfr2/framer.o: ../../../core/net/mac/framer.c \
  ../../../core/net/mac/framer.h ../../../core/net/packetbuf.h :
  ../../../platform/avr-atmega256rfr2/contiki-conf.h :
  ../../../cpu/avr/dev/compiler.h :
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h :
+ ../../../platform/avr-atmega256rfr2/platform-common.h :
+ ../../../platform/avr-atmega256rfr2/project-conf.h :
  ../../../core/net/linkaddr.h ../../../core/net/llsec/llsec802154.h :
  ../../../core/net/mac/frame802154.h ../../../core/net/ip/uip.h :
  ../../../core/net/ip/uipopt.h ../../../core/net/ip/tcpip.h :

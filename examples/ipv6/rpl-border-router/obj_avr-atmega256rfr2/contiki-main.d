@@ -5,7 +5,8 @@ obj_avr-atmega256rfr2/contiki-main.o: \
  ../../../core/net/mac/rdc.h \
  ../../../platform/avr-atmega256rfr2/contiki-conf.h \
  ../../../cpu/avr/dev/compiler.h \
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h \
+ ../../../platform/avr-atmega256rfr2/platform-common.h \
+ ../../../platform/avr-atmega256rfr2/project-conf.h \
  ../../../core/net/mac/mac.h ../../../core/dev/radio.h \
  ../../../core/loader/symbols-def.h ../../../core/loader/symtab.h \
  ../../../platform/avr-atmega256rfr2/./params.h \
@@ -76,7 +77,8 @@ obj_avr-atmega256rfr2/contiki-main.o: \
  ../../../core/net/mac/rdc.h :
  ../../../platform/avr-atmega256rfr2/contiki-conf.h :
  ../../../cpu/avr/dev/compiler.h :
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h :
+ ../../../platform/avr-atmega256rfr2/platform-common.h :
+ ../../../platform/avr-atmega256rfr2/project-conf.h :
  ../../../core/net/mac/mac.h ../../../core/dev/radio.h :
  ../../../core/loader/symbols-def.h ../../../core/loader/symtab.h :
  ../../../platform/avr-atmega256rfr2/./params.h :

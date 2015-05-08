@@ -2,7 +2,8 @@ obj_avr-atmega256rfr2/nullmac.o: ../../../core/net/mac/nullmac.c \
  ../../../core/net/mac/nullmac.h ../../../core/net/mac/mac.h \
  ../../../platform/avr-atmega256rfr2/contiki-conf.h \
  ../../../cpu/avr/dev/compiler.h \
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h \
+ ../../../platform/avr-atmega256rfr2/platform-common.h \
+ ../../../platform/avr-atmega256rfr2/project-conf.h \
  ../../../core/dev/radio.h ../../../core/net/netstack.h \
  ../../../core/net/llsec/llsec.h ../../../core/net/mac/rdc.h \
  ../../../core/net/mac/framer.h ../../../core/net/ip/uip.h \
@@ -26,7 +27,8 @@ obj_avr-atmega256rfr2/nullmac.o: ../../../core/net/mac/nullmac.c \
  ../../../core/net/mac/nullmac.h ../../../core/net/mac/mac.h :
  ../../../platform/avr-atmega256rfr2/contiki-conf.h :
  ../../../cpu/avr/dev/compiler.h :
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h :
+ ../../../platform/avr-atmega256rfr2/platform-common.h :
+ ../../../platform/avr-atmega256rfr2/project-conf.h :
  ../../../core/dev/radio.h ../../../core/net/netstack.h :
  ../../../core/net/llsec/llsec.h ../../../core/net/mac/rdc.h :
  ../../../core/net/mac/framer.h ../../../core/net/ip/uip.h :

@@ -2,7 +2,8 @@ obj_avr-atmega256rfr2/uaodv.o: ../../../core/net/ipv4/uaodv.c \
  ../../../core/contiki.h ../../../core/contiki-version.h \
  ../../../platform/avr-atmega256rfr2/contiki-conf.h \
  ../../../cpu/avr/dev/compiler.h \
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h \
+ ../../../platform/avr-atmega256rfr2/platform-common.h \
+ ../../../platform/avr-atmega256rfr2/project-conf.h \
  ../../../core/contiki-default-conf.h ../../../core/sys/process.h \
  ../../../core/sys/pt.h ../../../core/sys/lc.h \
  ../../../core/sys/lc-switch.h ../../../core/sys/cc.h \
@@ -61,7 +62,8 @@ obj_avr-atmega256rfr2/uaodv.o: ../../../core/net/ipv4/uaodv.c \
  ../../../core/contiki.h ../../../core/contiki-version.h :
  ../../../platform/avr-atmega256rfr2/contiki-conf.h :
  ../../../cpu/avr/dev/compiler.h :
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h :
+ ../../../platform/avr-atmega256rfr2/platform-common.h :
+ ../../../platform/avr-atmega256rfr2/project-conf.h :
  ../../../core/contiki-default-conf.h ../../../core/sys/process.h :
  ../../../core/sys/pt.h ../../../core/sys/lc.h :
  ../../../core/sys/lc-switch.h ../../../core/sys/cc.h :

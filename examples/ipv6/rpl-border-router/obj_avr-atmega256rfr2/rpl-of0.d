@@ -3,7 +3,8 @@ obj_avr-atmega256rfr2/rpl-of0.o: ../../../core/net/rpl/rpl-of0.c \
  ../../../core/net/rpl/rpl-conf.h \
  ../../../platform/avr-atmega256rfr2/contiki-conf.h \
  ../../../cpu/avr/dev/compiler.h \
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h \
+ ../../../platform/avr-atmega256rfr2/platform-common.h \
+ ../../../platform/avr-atmega256rfr2/project-conf.h \
  ../../../core/lib/list.h ../../../core/net/ip/uip.h \
  ../../../core/net/ip/uipopt.h ../../../core/net/ip/tcpip.h \
  ../../../core/contiki.h ../../../core/contiki-version.h \
@@ -37,7 +38,8 @@ obj_avr-atmega256rfr2/rpl-of0.o: ../../../core/net/rpl/rpl-of0.c \
  ../../../core/net/rpl/rpl-conf.h :
  ../../../platform/avr-atmega256rfr2/contiki-conf.h :
  ../../../cpu/avr/dev/compiler.h :
- ../../../platform/avr-atmega256rfr2/platform-common.h project-conf.h :
+ ../../../platform/avr-atmega256rfr2/platform-common.h :
+ ../../../platform/avr-atmega256rfr2/project-conf.h :
  ../../../core/lib/list.h ../../../core/net/ip/uip.h :
  ../../../core/net/ip/uipopt.h ../../../core/net/ip/tcpip.h :
  ../../../core/contiki.h ../../../core/contiki-version.h :

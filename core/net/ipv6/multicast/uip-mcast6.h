@@ -130,16 +130,20 @@ struct uip_mcast6_driver {
 /*---------------------------------------------------------------------------*/
 /* Configure multicast and core/net to play nicely with the selected engine */
 #if UIP_MCAST6_ENGINE
-
+#error "UIP_MCAST6_ENGINE defined"
 /* Enable Multicast hooks in the uip6 core */
 #define UIP_CONF_IPV6_MULTICAST 1
 
 #if UIP_MCAST6_ENGINE == UIP_MCAST6_ENGINE_ROLL_TM
+
+#error "UIP_MCAST6_ENGINE defined ROLL_TM"
 #define RPL_CONF_MULTICAST     0        /* Not used by trickle */
 #define UIP_CONF_IPV6_ROLL_TM  1        /* ROLL Trickle ICMP type support */
 
 #define UIP_MCAST6             roll_tm_driver
 #elif UIP_MCAST6_ENGINE == UIP_MCAST6_ENGINE_SMRF
+
+#error "UIP_MCAST6_ENGINE defined SMRf"
 #define RPL_CONF_MULTICAST     1
 
 #define UIP_MCAST6             smrf_driver
